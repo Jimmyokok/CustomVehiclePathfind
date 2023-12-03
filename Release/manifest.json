@@ -2,7 +2,7 @@
     "name": "CustomVehiclePathfind",
     "version_number": "1.0.2",
     "website_url": "https://github.com/Jimmyokok/CustomVehiclePathfind",
-    "description": "z",
+    "description": "Changing vehicle behaviors by configuring their pathfinding costs",
     "dependencies": [
         "BepInEx-BepInExPack-5.4.2100"
     ]
