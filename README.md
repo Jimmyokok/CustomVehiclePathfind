@@ -10,7 +10,6 @@
   - The effect is hardly observable under low lane changing cost, but devastating to your city if the lane changing cost is set to extremely high values.
 
 - Configurable path-finding cost of *simply driving* for vehicles. Higher cost effectively reduces the usage of vehicles for citizens (cargo and service vehicles are not affected).
-  - Recommended value: 0.01 is the default value of the game, 1.0 results in significantly reduced vehicle traffic.
 
 - All these function can be turned off.
 
@@ -23,9 +22,9 @@
 - The mod alters these pre-defined pathfinding costs. Specifically, it makes pathfinding costs for *unsafe behaviors (violating intersection rules and making unsafe u-turns), lane changing and driving* configurable. High costs actually work like punishments and block vehicles from considering these options, forcing them to turn to some *cheaper* solutions encouraged by *you*.
 
 - Explanations on the three configurable factors:
-  - Factor *m_unsafe_punishment*： Modifies path-finding costs of unsafe behaviors. Under higher costs, vehicles are less likely to break rules. Setting it to extremely high value (> 1000) to forbid rule breaking.
-  - Factor *m_lane_punishment*： Modifies path-finding costs of lane changing. Under higher costs, vehicles change lanes less frequently. Setting it to high value is not recommended, as it would destroy your city's normal traffic flow.
-  - Factor *m_driving_punishment*： Modifies path-finding costs of vehicle driving. This is similar to changing a city's *fuel price*, as higher driving costs make citizen less likely to *travel by cars*. Setting it to extremely high value (> 1000) to disable personal car traffic, while cargo and service vehicles are not affected.
+  - Factor *m_unsafe_punishment*： Modifies path-finding costs of unsafe behaviors. Under higher costs, vehicles are less likely to break rules. Setting it to extremely high value (> 1000) to forbid rule breaking. Recommended range: > 1000.
+  - Factor *m_lane_punishment*： Modifies path-finding costs of lane changing. Under higher costs, vehicles change lanes less frequently. Setting it to high value is not recommended, as it would destroy your city's normal traffic flow. Recommended range: > 10 when really needed.
+  - Factor *m_driving_punishment*： Modifies path-finding costs of vehicle driving. This is similar to changing a city's *fuel price*, as higher driving costs make citizen less likely to *travel by cars*. Setting it to extremely high value (> 1000) to disable personal car traffic, while cargo and service vehicles are not affected. Recommended range: 0.01-1.0 for slightly reduced traffic and > 1.0 for even less traffic.
   - Switches *enabled_unsafe_punishment, enabled_lane_punishment* and *enabled_driving_punishment* control if the above functions are active.
 
 ## Configuring the Setting
